@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+ </head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="description" content="Porsche" />
+	<title>Porsche</title>
+	<script src="contact.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/History.css">
+
+
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><h1>Porsche</h1></a>
+
+	<label for="hamburger_checkbox">
+		<img class="hamburger_image" src="images/hamburger_icon.svg" alt="expand and collapse menu" />
+	</label>
+
+ <input id="hamburger_checkbox" type="checkbox" />
+		<nav>
+			<a href="index.html">Index</a>
+			<a href="photos.html">Photos</a>
+			<a href="about.html">About</a>
+			<a class="active_nav". href="contact.html">contact</a>
+			<a href="History.html">History</a>
+		</nav>
+
+	</header>
+
+	<form id="contact_form">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname"><br>
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><br>
+		<label for="mobile">Mobile:</label><br>
+		<input type="text" id="mobile" name="mobile"><br><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" name="message"></textarea><br><br>
+		<input type="submit" value="submit" onclick="insertInto(); return false;"><br>
+		<input type="reset" value="Reset">
+	</form>
+
+	<table id="myTable">
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Email</th>
+			<th>Mobile</th>
+			<th>Message</th>
+		</tr>
+	</table>
+
+	<footer>
+		<img alt="Creative Commons License" 
+		src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+		<br />Porsche is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+	</footer>
+
+
+</body>
+</html>
